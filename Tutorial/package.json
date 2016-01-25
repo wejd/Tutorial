@@ -17,7 +17,7 @@
   },
   "scripts":{
 
-    "test":"./node_modules/.bin/mocha --recursive -R xunit Tutorial/test/ > test-reports.xml"
+    "test":"./node_modules/.bin/mocha --recursive -R xunit Tutorial/test > test-reports.xml"
 
 
 
