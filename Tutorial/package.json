@@ -17,7 +17,7 @@
   },
   "scripts":{
 
-    "test":"./node_modules/.bin/mocha --recursive -R xunit . > test-reports.xml"
+    "ci-test":"istanbul cover tape \"test/*-test.js\" > test.tap && istanbul report clover"
 
 
 
