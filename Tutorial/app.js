@@ -4,8 +4,8 @@ var engine=require('ejs-locals');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var restfull = require('node-restful');
-var mongoose=restfull.mongoose;
+//var restfull = require('node-restful');
+//var mongoose=restfull.mongoose;
 var routes = require('./routes/index');
  var abouts = require('./routes/abouts');
 var users = require('./routes/user');
@@ -31,18 +31,18 @@ app.use('/abouts', abouts);
 app.use('/users',users);
 
 //restfukl api
-mongoose.connect('mongodb://localhost/restful');
-var productSchema=mongoose.Schema({
-  name :String,
-  sku : String,
-  price : Number
+//mongoose.connect('mongodb://localhost/restful');
+//var productSchema=mongoose.Schema({
+//  name :String,
+ // sku : String,
+//  price : Number
 
 
 
-});
-var products = restfull.model('products',productSchema);
-products.methods(['get','put','post','delete']);
-products.register(app,'/api/products');
+//});
+//var products = restfull.model('products',productSchema);
+//products.methods(['get','put','post','delete']);
+//products.register(app,'/api/products');
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
