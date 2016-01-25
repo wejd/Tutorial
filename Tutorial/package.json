@@ -14,12 +14,5 @@
     "express": "~4.13.1",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0"
-  },
-  "scripts":{
-
-    "ci-test":"istanbul cover tape \"test/*-test.js\" > test.tap && istanbul report clover"
-
-
-
-}
+  }
 }
